@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:controller="MetricConverterController" 
+    xmlns:fx="http://javafx.com/fxml" alignment="top_center" hgap="5" vgap="5">
+<padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+<gridLinesVisible>false</gridLinesVisible>
+<rowConstraints>
+<RowConstraints minHeight = "10"/>
+<RowConstraints minHeight = "10"/>
+<RowConstraints minHeight = "100"/>
+</rowConstraints>
+<Label fx:id="modeText" text="Select Mode:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+<Button fx:id="Massbtn" text="Mass" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="2" onAction="#SetToMass"/>
+<Button fx:id="Lengthbtn" text="Length"  GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.columnSpan="2" onAction="#SetToLength"/>
+<Button fx:id="Tempbtn" text="Temperature"  GridPane.columnIndex="4" GridPane.rowIndex="1" GridPane.columnSpan="2" onAction="#SetToTemp"/>
+<Button fx:id="Volbtn" text="Volume"  GridPane.columnIndex="6" GridPane.rowIndex="1" GridPane.columnSpan="2" onAction="#SetToVol"/>
+<Button fx:id="Spdbtn" text="Speed"  GridPane.columnIndex="8" GridPane.rowIndex="1" GridPane.columnSpan="2" onAction="#SetToSpd"/>
+
+<Label text="Input" GridPane.columnIndex="3" GridPane.rowIndex="6"/>
+<Label text="Output" GridPane.columnIndex="5" GridPane.rowIndex="6"/>
+
+<TextField fx:id="inputField" text="0.00" GridPane.columnIndex="3" GridPane.rowIndex="7" prefWidth="30" disable="true"/>
+<Label fx:id="outputText" text="0.00" GridPane.columnIndex="5" GridPane.rowIndex="7"/>
+
+<Button fx:id="convert" text="Convert" GridPane.columnIndex="4" GridPane.rowIndex="8" GridPane.columnSpan="1" disable="true" onAction="#convert"/>
+
+
+<Button fx:id="op1a" text="" GridPane.columnIndex = "0" GridPane.rowIndex="3" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op1aPressed"/>
+<Button fx:id="op2a" text="" GridPane.columnIndex = "0" GridPane.rowIndex="4" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op2aPressed"/>
+<Button fx:id="op3a" text="" GridPane.columnIndex = "0" GridPane.rowIndex="5" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op3aPressed"/>
+<Button fx:id="op4a" text="" GridPane.columnIndex = "0" GridPane.rowIndex="6" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op4aPressed"/>
+<Button fx:id="op5a" text="" GridPane.columnIndex = "0" GridPane.rowIndex="7" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op5aPressed"/>
+<Button fx:id="op6a" text="" GridPane.columnIndex = "0" GridPane.rowIndex="8" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op6aPressed"/>
+<Button fx:id="op7a" text="" GridPane.columnIndex = "0" GridPane.rowIndex="9" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op7aPressed"/>
+<Button fx:id="op8a" text="" GridPane.columnIndex = "0" GridPane.rowIndex="10" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op8aPressed"/>
+<Button fx:id="op9a" text="" GridPane.columnIndex = "0" GridPane.rowIndex="11" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op9aPressed"/>
+<Button fx:id="op10a" text="" GridPane.columnIndex = "0" GridPane.rowIndex="12" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op10aPressed"/>
+<Button fx:id="op11a" text="" GridPane.columnIndex = "0" GridPane.rowIndex="13" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op11aPressed"/>
+<Button fx:id="op12a" text="" GridPane.columnIndex = "0" GridPane.rowIndex="14" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op12aPressed"/>
+<Button fx:id="op13a" text="" GridPane.columnIndex = "0" GridPane.rowIndex="15" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op13aPressed"/>
+
+<Button fx:id="op1b" text="" GridPane.columnIndex = "8" GridPane.rowIndex="3" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op1bPressed"/>
+<Button fx:id="op2b" text="" GridPane.columnIndex = "8" GridPane.rowIndex="4" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op2bPressed"/>
+<Button fx:id="op3b" text="" GridPane.columnIndex = "8" GridPane.rowIndex="5" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op3bPressed"/>
+<Button fx:id="op4b" text="" GridPane.columnIndex = "8" GridPane.rowIndex="6" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op4bPressed"/>
+<Button fx:id="op5b" text="" GridPane.columnIndex = "8" GridPane.rowIndex="7" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op5bPressed"/>
+<Button fx:id="op6b" text="" GridPane.columnIndex = "8" GridPane.rowIndex="8" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op6bPressed"/>
+<Button fx:id="op7b" text="" GridPane.columnIndex = "8" GridPane.rowIndex="9" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op7bPressed"/>
+<Button fx:id="op8b" text="" GridPane.columnIndex = "8" GridPane.rowIndex="10" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op8bPressed"/>
+<Button fx:id="op9b" text="" GridPane.columnIndex = "8" GridPane.rowIndex="11" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op9bPressed"/>
+<Button fx:id="op10b" text="" GridPane.columnIndex = "8" GridPane.rowIndex="12" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op10bPressed"/>
+<Button fx:id="op11b" text="" GridPane.columnIndex = "8" GridPane.rowIndex="13" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op11bPressed"/>
+<Button fx:id="op12b" text="" GridPane.columnIndex = "8" GridPane.rowIndex="14" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op12bPressed"/>
+<Button fx:id="op13b" text="" GridPane.columnIndex = "8" GridPane.rowIndex="15" GridPane.columnSpan="1" disable="true" minWidth="75" maxWidth="75" onAction="#op13bPressed"/>
+
+</GridPane>
